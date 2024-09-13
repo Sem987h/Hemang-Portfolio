@@ -3,10 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Behance Full-Screen Embed</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Full-Screen Figma Embed</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        iframe {
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
 </head>
 <body>
-    <iframe class="full-screen-iframe" src="https://www.behance.net/embed/project/202816049?ilo0=1" allowfullscreen lazyload frameborder="0" allow="clipboard-write" refererPolicy="strict-origin-when-cross-origin"></iframe>
+    <iframe src="https://embed.figma.com/proto/SKrCuHNIo90hBskQzTwLPy/Portfolio-Website-Design?node-id=42-1664&node-type=frame&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=42%3A1664&embed-host=share" allowfullscreen></iframe>
 </body>
 </html>
